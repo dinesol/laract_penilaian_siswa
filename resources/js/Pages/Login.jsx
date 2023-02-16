@@ -129,8 +129,122 @@ return
                         </tr>
                     </table>
                 </div>
-                {/*}
+                      {/* ----------FORM LOGIN SISWA----------*/}
+                <div 
+                  style={{  display: formSiswaVisible ? "block" : "none" }}
+                >
+                    <center>
+                        <b>Login Siswa</b>
+                        <p>{error}</p>
+                    </center>
+                    <table>
+                        <tr>
+                            <td width="25%">NIS</td>
+                            <td width="25%">
+                                <input
+                                type="text"
+                                onChange={(e)} =>
+                                   set abis(e.target.value)
+                               }
+                               />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="25%">Password</td>
+                            <td width="25%">
+                                <input
+                                    type="password"
+                                    onChange={(e) =>
+                                     setPassword(e.target.value)
+                                    }
+                                />
+                            </td>
+                        </tr>
+                        <tr>
+                           <td colSpan="2">
+                               <center>
+                                <button
+                                   className="button"
+                                   type="button"
+                                   onClick={() => handleLoginSiswa()}
+                                >
+                                    Login
+                                </button>
+                               </center>
+                           </td>
+                        </tr>
+                    </table>
+                </div>
+                     {/* ----------FORM LOGIN GURU----------*/}
+                <div 
+                  style={{  display: formGuruVisible ? "block" : "none" }}
+                >
+                    <center>
+                        <b>Login Guru</b>
+                        <p>{error}</p>
+                    </center>
+                    <table>
+                        <tr>
+                            <td width="25%">NIP</td>
+                            <td width="25%">
+                                <input
+                                type="text"
+                                onChange={(e)} =>
+                                   setNip(e.target.value)
+                               }
+                               />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="25%">Password</td>
+                            <td width="25%">
+                                <input
+                                    type="password"
+                                    onChange={(e) =>
+                                     setPassword(e.target.value)
+                                    }
+                                />
+                            </td>
+                        </tr>
+                        <tr>
+                           <td colSpan="2">
+                               <center>
+                                <button
+                                   className="button"
+                                   type="button"
+                                   onClick={() => handleLoginGuru()}
+                                >
+                                    Login
+                                </button>
+                               </center>
+                           </td>
+                        </tr>
+                    </table>
+                </div>
             </fieldset>
         </div>
+
+        <div className="kanan">
+        <center>
+           <h1>
+          SELAMAT DATANG
+           <br />
+          DI WEB PENILAIAN SMKN 1 CIBINONG 
+           </h1>
+        <center>
+      </div>
+
+      <div className="kiri-bawah">
+         <center>
+       <p className="mar">Gallery</p>
+       <div className="gallery">
+          img src="/gambar/g2.jpg" />
+       <div className="deskripsi">SMK BISA</div>
+     </div>
+   <center>
+</div>
+</>
+);
+}
     
 }
